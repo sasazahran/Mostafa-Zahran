@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", serif;
+}
+
+body {
+    background-color: #1e1d1d;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(9, 28, 241);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: rgb(6, 244, 240);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.arrow {
+    margin-top: 10px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heroSub {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: aliceblue;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 1.6rem;
+    color: rgb(7, 201, 226);
+}
+
+.heroBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.heroBtns a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hireme {
+    color: #a855f7;
+}
+
+.BK {
+    color: rgb(7, 201, 226);
+}
+.hero-image {
+    margin-left: auto;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.logo img {
+    filter: drop-shadow(0 0 10px rgba(7, 201, 226, 0.6));
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 0 20px rgba(7, 201, 226, 1));
+    transform: scale(1.05);
+}
+.hireme {
+  background-color: rgb(9, 146, 146);
+  color: #f7f2f2;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.BK {
+    background-color: rgba(57, 62, 70, 0.75);
+    color: #ffffff;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: rgba(0px, 4px, 4px, 0.5px);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(40px);
+}
+.aboutmeimg {
+    width: 350px;
+    height: auto;
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+/* --- تنسيق قسم About Me --- */
+
+/* الصندوق الكبير اللي شايل الصورة والكلام */
+.about-section {
+    display: flex;          /* عشان يرص العناصر جنب بعض */
+    align-items: center;    /* محاذاة رأسية في المنتصف */
+    justify-content: center; /* توسيط المحتوى كله */
+    gap: 17rem;              /* المسافة بين الصورة والكلام */
+    padding: 5rem 0;        /* مسافة فوق وتحت السيكشن */
+}
+
+/* تنسيق الصورة (تحديث للكود القديم) */
+.aboutmeimg {
+    width: 350px;           /* حجم الصورة */
+    height: auto;
+    border-radius: 20px;    /* تدوير الحواف */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* الضل */
+    /* شيلنا الـ margin-left القديم عشان الـ gap بيقوم بالواجب دلوقتي */
+}
+
+/* صندوق الكلام عشان ميفردش أوي */
+.about-text-box {
+    max-width: 600px;
+}
+
+/* عنوان السيكشن (باللون السماوي) */
+.about-title {
+    font-size: 2.5rem;
+    /* ده كود اللون السماوي بتاعك */
+    color: rgb(7, 201, 226); 
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* كلام الفقرة (خليته أبيض عشان يبقى مقروء، والكلمات المهمة سماوي) */
+.about-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff; /* الكلام العادي أبيض */
+}
+
+/* الكلمات المميزة جوه النص (القاهرة، المعادي، 21 سنة) */
+.about-desc strong {
+    /* نخليها هي كمان باللون السماوي عشان تنور */
+    color: rgb(7, 201, 226); 
+    font-weight: bold;
+}
+
+/* --- تنسيق للموبايل عشان ميبوظش --- */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* في الموبايل يجوا تحت بعض */
+        text-align: center;     /* الكلام يتوسطن */
+    }
+    .aboutmeimg {
+        width: 80%; /* الصورة تصغر شوية */
+        max-width: 300px;
+    }
+}
+/* تنسيق قسم البورتفوليو */
+.portfolio-section {
+    text-align: center; /* ده الأمر السحري اللي بيجيب الكلام في النص */
+    padding-top: 5rem;  /* مسافة من فوق عشان لما تدوس عاللينك ينزل مرتاح */
+    padding-bottom: 2rem;
+    margin-top: 600px;
+}
+
+.portfolio-title {
+    font-size: 3rem;     /* حجم خط كبير ومميز */
+    font-weight: 700;
+    color: aliceblue;    /* اللون الأبيض الأساسي */
+    text-transform: capitalize;
+}
+
+/* تلوين كلمة Portfolio بس باللون السماوي */
+.highlight {
+    color: rgb(7, 201, 226);
+}
+/* --- تنسيق شبكة السوشيال ميديا --- */
+
+.portfolio-grid {
+    display: flex;            /* يرصهم جنب بعض */
+    justify-content: center;  /* يجيبهم في نص الشاشة */
+    gap: 40px;                /* المسافة بين كل صورة والتانية */
+    flex-wrap: wrap;          /* عشان الموبايل */
+    margin-top: 40px;
+}
+
+/* =========================================
+   ⬇️⬇️ تحكم في حجم الصور من هنا ⬇️⬇️
+   ========================================= */
+.portfolio-item img {
+    width: 250px;   /* عرض الصورة (كبر وصغر الرقم ده براحتك) */
+    height: 180px;  /* طول الصورة */
+    object-fit: cover;
+    
+    /* الستايل والضل */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* ضل تقيل وشيك */
+    transition: 0.3s;
+}
+/* ========================================= */
+
+.portfolio-item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* حركة لما تقف عالصورة */
+.portfolio-item:hover img {
+    transform: translateY(-10px); /* الصورة تطلع لفوق سنة */
+    box-shadow: 0 15px 35px rgba(7, 201, 226, 0.4); /* الضل يزرق */
+}
+
+/* تنسيق الكلام تحت الصورة */
+.caption {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: aliceblue;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.portfolio-item:hover .caption {
+    color: rgb(7, 201, 226); /* الكلام يبقى سماوي لما تقف عليه */
+}
+/* =========================================
+   بداية كود قسم التواصل (المتظبط نهائي)
+   ========================================= */
+
+/* 1. السيكشن والشبكة (عشان ييجوا بالعرض وفي النص) */
+.contact-section {
+    text-align: center;
+    margin-top: 800px;
+    padding-bottom: 50px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.contact-grid {
+    display: flex;            /* ده اللي بيجيبهم جنب بعض */
+    justify-content: center;  /* ده اللي بيجيبهم في النص */
+    gap: 20px;                /* مسافة صغيرة بينهم */
+    flex-wrap: wrap;
+}
+
+/* 2. شكل الكارت (صغرناه زي ما طلبت) */
+.contact-card {
+    width: 110px;             /* العرض صغرناه لـ 110 */
+    padding: 15px 10px;
+    background-color: #131313;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;    /* نعومة الحركة */
+    border: 1px solid transparent;
+}
+
+/* 3. تنسيق الرابط والأيقونة */
+.contact-card a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 35px;              /* الأيقونة صغرت لـ 35 */
+    height: 35px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.contact-caption {
+    font-size: 0.9rem;        /* الخط صغر عشان يليق ع الكارت */
+    color: aliceblue;
+    font-weight: 500;
+    margin: 0;
+    transition: 0.3s;
+}
+
+/* =========================================
+   4. الألوان والحركات (عشان ينوروا ويتحركوا)
+   ========================================= */
+
+/* حركة عامة لكل الكروت: يطلع لفوق */
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+.contact-card:hover .contact-icon {
+    transform: scale(1.1);
+}
+
+/* --- فيسبوك (أزرق) --- */
+.contact-card.facebook:hover {
+    box-shadow: 0 10px 25px rgba(24, 119, 242, 0.5);
+    border-color: #1877F2;
+}
+.contact-card.facebook:hover .contact-caption { color: #1877F2; }
+.contact-card.facebook:hover .contact-icon { filter: drop-shadow(0 0 8px #1877F2); }
+
+/* --- انستجرام (بمبي) --- */
+.contact-card.instagram:hover {
+    box-shadow: 0 10px 25px rgba(225, 48, 108, 0.5);
+    border-color: #E1306C;
+}
+.contact-card.instagram:hover .contact-caption { color: #E1306C; }
+.contact-card.instagram:hover .contact-icon { filter: drop-shadow(0 0 8px #E1306C); }
+
+/* --- واتساب (أخضر) --- */
+.contact-card.whatsapp:hover {
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+    border-color: #25D366;
+}
+.contact-card.whatsapp:hover .contact-caption { color: #25D366; }
+.contact-card.whatsapp:hover .contact-icon { filter: drop-shadow(0 0 8px #25D366); }
+
+/* --- تليفون (أحمر) --- */
+.contact-card.phone:hover {
+    box-shadow: 0 10px 25px rgba(255, 71, 87, 0.5);
+    border-color: #ff4757;
+}
+.contact-card.phone:hover .contact-caption { color: #ff4757; }
+.contact-card.phone:hover .contact-icon { filter: drop-shadow(0 0 8px #ff4757); }
+
+
+/* --- تنسيق الفوتر (الحقوق) --- */
+footer {
+    text-align: center;      /* يجيب الكلام في النص */
+    margin-top: 250px;       /* يبعد عن الأيقونات اللي فوقه مسافة كبيرة */
+    font-size: 19px;         /* حجم الخط صغير (ممكن تصغره لـ 12px لو حابب) */
+    color: #fbde02;             /* لون رصاصي هادي عشان ميكونش مزعج */
+    padding-bottom: 20px;    /* مسافة صغيرة من تحت خالص */
+    font-weight: 300;        /* سمك الخط رفيع */}
+
+
+    /* =========================================
+   تظبيط الموبايل والشاشات الصغيرة (Responsive)
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. تظبيط عام للصفحة */
+    html, body {
+        overflow-x: hidden; /* يمنع الصفحة تروح يمين وشمال */
+    }
+    .container {
+        width: 90%; /* يخلي المحتوى واخد راحته بس سايب حواف صغيرة */
+        padding: 0 10px;
+    }
+
+    /* 2. الناف بار (القائمة اللي فوق) */
+    header .container {
+        flex-direction: column; /* اللوجو فوق والزراير تحته */
+        gap: 15px;
+    }
+    nav ul {
+        gap: 15px; /* يقرب الزراير من بعض شوية */
+        font-size: 0.9rem;
+    }
+
+    /* 3. سيكشن الهيرو (أول جزء في الموقع) */
+    .hero {
+        flex-direction: column-reverse; /* يجيب الكلام تحت والصورة فوق */
+        text-align: center;       /* يوسطن الكلام */
+        height: auto;             /* يلغي الطول الثابت */
+        padding-top: 120px;       /* مسافة عشان الناف بار */
+        padding-bottom: 50px;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .hero-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero-image img {
+        width: 70%; /* يصغر الصورة شوية عشان متبقاش ضخمة عالموبايل */
+        max-width: 300px;
+    }
+
+    /* 4. سيكشن About Me */
+    .about-section {
+        flex-direction: column; /* الصورة فوق والكلام تحت */
+        text-align: center;
+        gap: 30px;
+    }
+    .aboutmeimg {
+        margin: 0;       /* يشيل المسافات الجانبية */
+        width: 80%;      /* حجم مناسب للموبايل */
+    }
+    .about-text-box {
+        max-width: 100%;
+    }
+
+    /* 5. تظبيط البورتفوليو والتواصل */
+    .portfolio-grid, .contact-grid {
+        gap: 20px; /* يقلل المسافات بينهم شوية */
+    }
+    
+    /* تكبير حجم الكلام شوية عشان يبقى مقروء عالموبايل */
+    p {
+        font-size: 1rem;
+    }
+}
