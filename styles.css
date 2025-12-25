@@ -550,4 +550,75 @@ footer {
 .whatsapp-confirm-btn { display: inline-block; background-color: #25D366; color: #fff; text-decoration: none; padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; font-weight: 700; transition: 0.3s; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); }
 .whatsapp-confirm-btn:hover { background-color: #20bd5a; transform: translateY(-3px); box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5); }
 .whatsapp-confirm-btn i { margin-right: 10px; }
-@media (max-width: 768px) { .section-title { font-size: 2.2rem; } .payment-card { width: 100%; } .whatsapp-confirm-btn { width: 100%; padding: 15px 20px; font-size: 1rem;} }
+/* =========================================
+   تظبيط الموبايل والشاشات الصغيرة (Responsive) - النسخة المتصلحة
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* 1. نخلي الشريط اللي فوق يترتب عمودي (اللوجو فوق والزراير تحته) */
+    .top-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* 2. اللوجو يبقى في النص */
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    /* 3. قايمة الزراير تبقى في النص وتتلف لو الشاشة ضيقة */
+    .navigation ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px; /* وسعنا المسافة بينهم شوية */
+    }
+
+    /* 4. تعديل القائمة المنسدلة في الموبايل عشان متخرجش بره الشاشة */
+    .dropdown-content {
+        left: 50%;
+        transform: translateX(-50%); /* عشان تيجي في نص الزرار بالظبط */
+        min-width: 200px; /* نكبرها شوية في الموبايل عشان اللمس */
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        padding: 15px; /* نكبر مساحة الدوس */
+    }
+
+    /* باقي التظبيطات زي ما هي */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px; /* قللنا المسافة الفاضية فوق شوية */
+    }
+    
+    .heroBtns {
+        align-items: center; /* الزراير تيجي في نص الشاشة */
+    }
+
+    .hero-image {
+        margin: 0 auto 30px; /* تتوسطن وتبعد عن الكلام شوية */
+        width: 100%;
+    }
+    
+    .hero-image img {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 3rem 0;
+    }
+    
+    .aboutmeimg {
+        width: 90%; 
+        max-width: 350px;
+        margin: 0;
+    }
+
+    /* تكبير الخطوط شوية في الموبايل عشان القراءة */
+    p { font-size: 1rem; }
+    .name { font-size: 2rem; }
+}
