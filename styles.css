@@ -30,6 +30,9 @@ body {
     display: flex;
     list-style-type: none;
     gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation a {
@@ -37,6 +40,7 @@ body {
     color: rgb(9, 28, 241);
     transition: 0.3s;
     font-weight: 500;
+    padding: 10px 0;
 }
 
 .navigation a:hover {
@@ -150,127 +154,101 @@ hr {
 .aboutmeimg {
     width: 350px;
     height: auto;
-    margin-left: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 /* --- تنسيق قسم About Me --- */
 
-/* الصندوق الكبير اللي شايل الصورة والكلام */
 .about-section {
-    display: flex;          /* عشان يرص العناصر جنب بعض */
-    align-items: center;    /* محاذاة رأسية في المنتصف */
-    justify-content: center; /* توسيط المحتوى كله */
-    gap: 17rem;              /* المسافة بين الصورة والكلام */
-    padding: 5rem 0;        /* مسافة فوق وتحت السيكشن */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17rem;
+    padding: 5rem 0;
 }
 
-/* تنسيق الصورة (تحديث للكود القديم) */
-.aboutmeimg {
-    width: 350px;           /* حجم الصورة */
-    height: auto;
-    border-radius: 20px;    /* تدوير الحواف */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* الضل */
-    /* شيلنا الـ margin-left القديم عشان الـ gap بيقوم بالواجب دلوقتي */
-}
-
-/* صندوق الكلام عشان ميفردش أوي */
 .about-text-box {
     max-width: 600px;
 }
 
-/* عنوان السيكشن (باللون السماوي) */
 .about-title {
     font-size: 2.5rem;
-    /* ده كود اللون السماوي بتاعك */
     color: rgb(7, 201, 226); 
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
 
-/* كلام الفقرة (خليته أبيض عشان يبقى مقروء، والكلمات المهمة سماوي) */
 .about-desc {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #fff; /* الكلام العادي أبيض */
+    color: #fff;
 }
 
-/* الكلمات المميزة جوه النص (القاهرة، المعادي، 21 سنة) */
 .about-desc strong {
-    /* نخليها هي كمان باللون السماوي عشان تنور */
     color: rgb(7, 201, 226); 
     font-weight: bold;
 }
 
-/* --- تنسيق للموبايل عشان ميبوظش --- */
 @media (max-width: 768px) {
     .about-section {
-        flex-direction: column; /* في الموبايل يجوا تحت بعض */
-        text-align: center;     /* الكلام يتوسطن */
+        flex-direction: column;
+        text-align: center;
     }
     .aboutmeimg {
-        width: 80%; /* الصورة تصغر شوية */
+        width: 80%;
         max-width: 300px;
     }
 }
 /* تنسيق قسم البورتفوليو */
 .portfolio-section {
-    text-align: center; /* ده الأمر السحري اللي بيجيب الكلام في النص */
-    padding-top: 5rem;  /* مسافة من فوق عشان لما تدوس عاللينك ينزل مرتاح */
+    text-align: center;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     margin-top: 600px;
 }
 
 .portfolio-title {
-    font-size: 3rem;     /* حجم خط كبير ومميز */
+    font-size: 3rem;
     font-weight: 700;
-    color: aliceblue;    /* اللون الأبيض الأساسي */
+    color: aliceblue;
     text-transform: capitalize;
 }
 
-/* تلوين كلمة Portfolio بس باللون السماوي */
 .highlight {
     color: rgb(7, 201, 226);
 }
 /* --- تنسيق شبكة السوشيال ميديا --- */
 
 .portfolio-grid {
-    display: flex;            /* يرصهم جنب بعض */
-    justify-content: center;  /* يجيبهم في نص الشاشة */
-    gap: 40px;                /* المسافة بين كل صورة والتانية */
-    flex-wrap: wrap;          /* عشان الموبايل */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
-/* =========================================
-   ⬇️⬇️ تحكم في حجم الصور من هنا ⬇️⬇️
-   ========================================= */
 .portfolio-item img {
-    width: 250px;   /* عرض الصورة (كبر وصغر الرقم ده براحتك) */
-    height: 180px;  /* طول الصورة */
+    width: 250px;
+    height: 180px;
     object-fit: cover;
-    
-    /* الستايل والضل */
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* ضل تقيل وشيك */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
-/* ========================================= */
 
 .portfolio-item a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
 
-/* حركة لما تقف عالصورة */
 .portfolio-item:hover img {
-    transform: translateY(-10px); /* الصورة تطلع لفوق سنة */
-    box-shadow: 0 15px 35px rgba(7, 201, 226, 0.4); /* الضل يزرق */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(7, 201, 226, 0.4);
 }
 
-/* تنسيق الكلام تحت الصورة */
 .caption {
     margin-top: 15px;
     font-size: 1.4rem;
@@ -280,13 +258,12 @@ hr {
 }
 
 .portfolio-item:hover .caption {
-    color: rgb(7, 201, 226); /* الكلام يبقى سماوي لما تقف عليه */
+    color: rgb(7, 201, 226);
 }
 /* =========================================
-   بداية كود قسم التواصل (المتظبط نهائي)
+   بداية كود قسم التواصل
    ========================================= */
 
-/* 1. السيكشن والشبكة (عشان ييجوا بالعرض وفي النص) */
 .contact-section {
     text-align: center;
     margin-top: 800px;
@@ -301,33 +278,32 @@ hr {
 }
 
 .contact-grid {
-    display: flex;            /* ده اللي بيجيبهم جنب بعض */
-    justify-content: center;  /* ده اللي بيجيبهم في النص */
-    gap: 20px;                /* مسافة صغيرة بينهم */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-/* 2. شكل الكارت (صغرناه زي ما طلبت) */
 .contact-card {
-    width: 110px;             /* العرض صغرناه لـ 110 */
+    width: 110px;
     padding: 15px 10px;
     background-color: #131313;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.4s ease;    /* نعومة الحركة */
+    transition: 0.4s ease;
     border: 1px solid transparent;
 }
 
-/* 3. تنسيق الرابط والأيقونة */
 .contact-card a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
 
 .contact-icon {
-    width: 35px;              /* الأيقونة صغرت لـ 35 */
+    width: 35px;
     height: 35px;
     object-fit: contain;
     margin-bottom: 10px;
@@ -335,7 +311,7 @@ hr {
 }
 
 .contact-caption {
-    font-size: 0.9rem;        /* الخط صغر عشان يليق ع الكارت */
+    font-size: 0.9rem;
     color: aliceblue;
     font-weight: 500;
     margin: 0;
@@ -343,10 +319,9 @@ hr {
 }
 
 /* =========================================
-   4. الألوان والحركات (عشان ينوروا ويتحركوا)
+   4. الألوان والحركات
    ========================================= */
 
-/* حركة عامة لكل الكروت: يطلع لفوق */
 .contact-card:hover {
     transform: translateY(-8px);
 }
@@ -387,47 +362,46 @@ hr {
 .contact-card.phone:hover .contact-icon { filter: drop-shadow(0 0 8px #ff4757); }
 
 
-/* --- تنسيق الفوتر (الحقوق) --- */
+/* --- تنسيق الفوتر --- */
 footer {
-    text-align: center;      /* يجيب الكلام في النص */
-    margin-top: 250px;       /* يبعد عن الأيقونات اللي فوقه مسافة كبيرة */
-    font-size: 19px;         /* حجم الخط صغير (ممكن تصغره لـ 12px لو حابب) */
-    color: #fbde02;             /* لون رصاصي هادي عشان ميكونش مزعج */
-    padding-bottom: 20px;    /* مسافة صغيرة من تحت خالص */
-    font-weight: 300;        /* سمك الخط رفيع */}
+    text-align: center;
+    margin-top: 250px;
+    font-size: 19px;
+    color: #fbde02;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
 
 
-    /* =========================================
+/* =========================================
    تظبيط الموبايل والشاشات الصغيرة (Responsive)
    ========================================= */
 
 @media (max-width: 768px) {
-    
-    /* 1. تظبيط عام للصفحة */
     html, body {
-        overflow-x: hidden; /* يمنع الصفحة تروح يمين وشمال */
+        overflow-x: hidden;
     }
     .container {
-        width: 90%; /* يخلي المحتوى واخد راحته بس سايب حواف صغيرة */
+        width: 90%;
         padding: 0 10px;
     }
 
-    /* 2. الناف بار (القائمة اللي فوق) */
     header .container {
-        flex-direction: column; /* اللوجو فوق والزراير تحته */
+        flex-direction: column;
         gap: 15px;
     }
     nav ul {
-        gap: 15px; /* يقرب الزراير من بعض شوية */
+        gap: 5px;
         font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    /* 3. سيكشن الهيرو (أول جزء في الموقع) */
     .hero {
-        flex-direction: column-reverse; /* يجيب الكلام تحت والصورة فوق */
-        text-align: center;       /* يوسطن الكلام */
-        height: auto;             /* يلغي الطول الثابت */
-        padding-top: 120px;       /* مسافة عشان الناف بار */
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding-top: 120px;
         padding-bottom: 50px;
     }
     .hero-text {
@@ -438,31 +412,142 @@ footer {
         margin-bottom: 30px;
     }
     .hero-image img {
-        width: 70%; /* يصغر الصورة شوية عشان متبقاش ضخمة عالموبايل */
+        width: 70%;
         max-width: 300px;
     }
 
-    /* 4. سيكشن About Me */
     .about-section {
-        flex-direction: column; /* الصورة فوق والكلام تحت */
+        flex-direction: column;
         text-align: center;
         gap: 30px;
     }
     .aboutmeimg {
-        margin: 0;       /* يشيل المسافات الجانبية */
-        width: 80%;      /* حجم مناسب للموبايل */
+        margin: 0;
+        width: 80%;
     }
     .about-text-box {
         max-width: 100%;
     }
 
-    /* 5. تظبيط البورتفوليو والتواصل */
     .portfolio-grid, .contact-grid {
-        gap: 20px; /* يقلل المسافات بينهم شوية */
+        gap: 20px;
     }
     
-    /* تكبير حجم الكلام شوية عشان يبقى مقروء عالموبايل */
     p {
         font-size: 1rem;
     }
 }
+
+/* =========================================
+   ⬇⬇⬇ أكواد القائمة المنسدلة الجديدة (Dropdown) ⬇⬇⬇
+   ========================================= */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 👇 التعديل هنا: تنسيق الزرار ليكون مميز 👇 */
+.dropbtn {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* مسافة بين الكلمة والسهم */
+    font-weight: 700; /* خط تقيل */
+    color: rgb(7, 201, 226); /* لون سماوي */
+    transition: 0.3s;
+}
+
+/* 👇 تنسيق السهم الصغير لوحده 👇 */
+.dropbtn span {
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+/* 👇 لما القائمة تفتح (بالماوس أو الدوسة) 👇 */
+.dropdown:hover .dropbtn,
+.dropbtn:focus { /* focus دي عشان الموبايل */
+    color: #fff; /* الكلمة تبيض */
+    text-shadow: 0 0 10px rgba(7, 201, 226, 0.5); /* تنور */
+}
+
+/* 👇 السهم يلف لما القائمة تفتح 👇 */
+.dropdown:hover .dropbtn span,
+.dropbtn:focus span {
+    transform: rotate(180deg); /* يلف لفوق */
+}
+
+/* الصندوق اللي بيظهر */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #131313;
+    min-width: 180px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    z-index: 1000;
+    border-radius: 12px;
+    border: 1px solid rgba(7, 201, 226, 0.2);
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    pointer-events: none; /* مقفول في الأول */
+}
+
+/* 👇 السحر كله هنا: الفتح بالماوس (hover) أو الدوسة (focus-within) 👇 */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease;
+    pointer-events: auto; /* يشتغل لما يظهر */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* الروابط جوه القائمة */
+.dropdown-content a {
+    color: #fff !important;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-weight: 400;
+}
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(7, 201, 226, 0.1);
+    color: rgb(7, 201, 226) !important;
+    padding-left: 25px;
+}
+
+/* =========================================
+   (باقي أكواد صفحة الحجز زي ما هي...)
+   ========================================= */
+.booking-section { padding: 100px 20px; text-align: center; }
+.section-title { font-size: 3rem; color: aliceblue; margin-bottom: 20px; font-weight: 700; }
+.section-desc { color: #ccc; font-size: 1.1rem; max-width: 700px; margin: 0 auto 60px; line-height: 1.6; }
+.payment-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 60px; }
+.payment-card { background-color: #131313; border: 1px solid rgba(7, 201, 226, 0.1); border-radius: 20px; padding: 40px 30px; width: 350px; text-align: center; transition: 0.3s; position: relative; overflow: hidden; }
+.payment-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); border-color: rgb(7, 201, 226); }
+.payment-icon { font-size: 3rem; margin-bottom: 20px; }
+.vf-cash { color: #e60000; }
+.instapay { color: #6a0dad; }
+.payment-card h3 { font-size: 1.5rem; color: #fff; margin-bottom: 25px; }
+.account-number { font-weight: 700; color: rgb(7, 201, 226); background-color: #0a0a0a; padding: 15px; border-radius: 10px; margin-bottom: 15px; letter-spacing: 1px; border: 1px dashed rgba(7, 201, 226, 0.3); line-height: 1.4; overflow-wrap: break-word; word-wrap: break-word; }
+.account-name { color: #888; font-size: 0.9rem; }
+.confirmation-box { max-width: 700px; margin: 0 auto; background-color: rgba(7, 201, 226, 0.05); padding: 40px; border-radius: 20px; border: 1px solid rgba(7, 201, 226, 0.2); }
+.important-note { color: #ccc; margin-bottom: 30px; font-size: 1.1rem; }
+.important-note i { color: rgb(7, 201, 226); margin-right: 10px; }
+.whatsapp-confirm-btn { display: inline-block; background-color: #25D366; color: #fff; text-decoration: none; padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; font-weight: 700; transition: 0.3s; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); }
+.whatsapp-confirm-btn:hover { background-color: #20bd5a; transform: translateY(-3px); box-shadow: 0 15px 35px rgba(37, 211, 102, 0.5); }
+.whatsapp-confirm-btn i { margin-right: 10px; }
+@media (max-width: 768px) { .section-title { font-size: 2.2rem; } .payment-card { width: 100%; } .whatsapp-confirm-btn { width: 100%; padding: 15px 20px; font-size: 1rem;} }

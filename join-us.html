@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Our Team | MZ Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* تنسيقات خاصة بصفحة الانضمام دي بس */
+    
+    .join-section {
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+    .join-title {
+      font-size: 3rem;
+      color: aliceblue;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .highlight {
+        color: rgb(7, 201, 226);
+    }
+
+    .join-desc {
+      color: #ccc;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      line-height: 1.6;
+    }
+    
+    .join-form-box {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #131313;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(7, 201, 226, 0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+    
+    .form-label {
+      display: block;
+      color: rgb(7, 201, 226);
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #2a2a2a;
+      background-color: #0a0a0a;
+      color: #fff;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: 0.3s;
+      font-family: "poppins", serif;
+    }
+    
+    .form-input:focus {
+      outline: none;
+      border-color: rgb(7, 201, 226);
+      box-shadow: 0 0 15px rgba(7, 201, 226, 0.2);
+    }
+    
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background-color: rgb(9, 146, 146);
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: "poppins", serif;
+      margin-top: 10px;
+    }
+    
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(7, 201, 226, 0.3);
+      background-color: rgb(7, 201, 226);
+    }
+
+    @media (max-width: 768px) {
+        .join-title { font-size: 2.2rem; }
+        .join-form-box { padding: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <div class="top-bar">
+        <div class="logo">
+           <a href="office.html">
+             <img src="assets/imgs/Picsart_25-12-16_14-39-27-853.png" alt="zahran logo" width="120" />
+           </a>
+        </div>
+
+        <nav class="navigation">
+          <ul>
+            <li><a href="office.html#aboutme">About Me</a></li>
+            <li><a href="office.html#myportfolio">My Portfolio</a></li>
+            <li><a href="office.html#callme">Call Me</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" style="color: rgb(7, 201, 226);">Logins ▾</a>
+                <div class="dropdown-content">
+                  <a href="https://drive.google.com" target="_blank">Client Portal</a>
+                  <a href="#" style="color: rgb(7, 201, 226);">Join Team</a>
+                </div>
+            </li>
+            </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="container">
+      <hr />
+  </div>
+
+
+  <section class="join-section container">
+    <h1 class="join-title">Join Our <span class="highlight">Creative Team</span></h1>
+    <p class="join-desc">
+      Are you a passionate photographer? We are looking for talented artists to join Mostafa Zahran's team. Show us your work and let's create magic together!
+    </p>
+
+    <div class="join-form-box">
+        <form>
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" placeholder="e.g., Ahmed Hassan" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Phone / WhatsApp</label>
+            <input type="tel" class="form-input" placeholder="010xxxxxxxx" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Portfolio Link (Drive / Behance)</label>
+            <input type="url" class="form-input" placeholder="https://..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your City</label>
+            <input type="text" class="form-input" placeholder="e.g., Cairo, Mansoura">
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+  </section>
+
+  <footer>
+      <p>Created by Mostafa Zahran © 2025</p>
+  </footer>
+
+</body>
+</html>

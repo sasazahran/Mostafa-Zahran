@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Access Info | MZ Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* تنسيق بسيط خاص بالصفحة دي عشان الكلام يبقى في النص وشكله حلو */
+    .info-section {
+        padding: 150px 20px; /* مسافة كبيرة من فوق وتحت */
+        text-align: center;
+        min-height: 60vh; /* عشان تاخد مساحة كويسة في الشاشة */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-icon {
+        font-size: 5rem;
+        color: rgb(7, 201, 226);
+        margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="top-bar">
+        <div class="logo">
+           <a href="office.html">
+             <img src="assets/imgs/Picsart_25-12-16_14-39-27-853.png" alt="zahran logo" width="120" />
+           </a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="office.html#aboutme">About Me</a></li>
+            <li><a href="office.html#myportfolio">My Portfolio</a></li>
+            <li><a href="office.html#callme">Call Me</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" style="color: rgb(7, 201, 226);">Logins ▾</a>
+                <div class="dropdown-content">
+                  <a href="#" style="color: rgb(7, 201, 226);">Client Portal</a>
+                  <a href="join-us.html">Join Team</a>
+                </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+      <hr />
+  </div>
+
+
+  <section class="info-section container">
+    
+    <div class="info-icon">
+        <i class="fas fa-user-lock"></i>
+    </div>
+
+    <h1 class="section-title">Client Gallery <span class="highlight">Access</span></h1>
+    
+    <p class="section-desc" style="max-width: 600px;">
+      Dear Client, your photos are secured. For privacy and security reasons, 
+      please contact Mostafa on WhatsApp to receive your <strong>unique access link</strong> and password.
+    </p>
+
+    <a href="https://wa.me/201012907627?text=Hello Mostafa, I would like to receive my gallery access link." target="_blank" class="whatsapp-confirm-btn">
+        <i class="fab fa-whatsapp"></i> Get My Access Link
+    </a>
+
+  </section>
+
+
+  <footer>
+      <p>Created by Mostafa Zahran © 2025</p>
+  </footer>
+
+</body>
+</html>
